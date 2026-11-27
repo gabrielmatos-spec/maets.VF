@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu primeiro site</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f2f5f9;
+      color: #243247;
+      line-height: 1.6;
+    }
+    header {
+      background: #173b63;
+      color: white;
+      text-align: center;
+      padding: 42px 20px;
+    }
+    header h1 { margin: 0 0 8px; font-size: 2.2rem; }
+    nav { background: #102b49; padding: 12px; text-align: center; }
+    nav a {
+      color: white; text-decoration: none; margin: 0 12px; font-weight: bold;
+    }
+    main { max-width: 850px; margin: 28px auto; padding: 0 18px; }
+    section {
+      background: white; padding: 24px; margin-bottom: 20px;
+      border-radius: 12px; box-shadow: 0 3px 12px #00000012;
+    }
+    h2 { color: #173b63; margin-top: 0; }
+    .botao {
+      display: inline-block; background: #2878bd; color: white;
+      padding: 10px 18px; border-radius: 8px; text-decoration: none;
+    }
+    footer { text-align: center; background: #173b63; color: white; padding: 18px; }
+    @media (max-width: 520px) {
+      header h1 { font-size: 1.7rem; }
+      nav a { display: inline-block; margin: 5px 8px; }
+    }
+  </style>
+</head>
+<body>
+  <header id="inicio">
+    <h1>Meu primeiro site</h1>
+    <p>Uma página simples feita com HTML e CSS</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#aprendizado">O que estou aprendendo</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre este site</h2>
+      <p>Este site foi criado como uma atividade de desenvolvimento web. A ideia é aprender como montar uma página usando HTML e CSS e depois publicá-la na internet pelo GitHub Pages.</p>
+    </section>
+
+    <section id="aprendizado">
+      <h2>O que estou aprendendo</h2>
+      <ul>
+        <li>Como organizar o conteúdo com HTML;</li>
+        <li>Como mudar cores, fontes e espaços usando CSS;</li>
+        <li>Como publicar um site e compartilhar seu link.</li>
+      </ul>
+      <a class="botao" href="https://pages.github.com/" target="_blank" rel="noopener">Conhecer o GitHub Pages</a>
+    </section>
+
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Esta área pode ser personalizada com meu nome, turma ou outras informações que eu queira colocar no site.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Site criado para atividade escolar • 2026</p>
+  </footer>
+</body>
+</html>
